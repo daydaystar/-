@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="./sort.js"></script>
+  <script>
+    const app = document.querySelector('#app')
+    app.style.fontSize = '30px'
+    const input = document.createElement('input')
+    input.style.width = "80vw"
+    input.style.height = "50px"
+    const button = document.createElement('button')
+    button.innerText = '输出'
+    button.style.height = "50px"
+    button.addEventListener('click',() => {
+      p.innerText = mergeSort(eval(input.value))
+    })
+    const p = document.createElement('p')
+    app.append(input, button, p)
+  </script>
+</body>
+</html>
